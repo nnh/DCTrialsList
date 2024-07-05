@@ -5,15 +5,17 @@
   "repository": "git@github.com:nnh/DCTrialsList.git",
   "license": "MIT",
   "scripts": {
-    "start": "watch 'webpack && clasp push' ./src",
+    "start": "npm-run-all -p watch-webpack clasp-push",
+    "clasp-push": "clasp push",
+    "watch-webpack": "webpack --watch ./src",
     "push": "webpack && clasp push",
     "test": "ts-mocha tests/*.test.ts"
   },
   "devDependencies": {
     "@types/google-apps-script": "^1.0.83",
     "gas-webpack-plugin": "^2.6.0",
+    "npm-run-all": "^4.1.5",
     "ts-loader": "^9.5.1",
-    "watch": "*",
     "webpack": "*",
     "webpack-cli": "*"
   }
