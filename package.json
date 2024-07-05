@@ -1,0 +1,20 @@
+{
+  "name": "dc-trials-list",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:nnh/DCTrialsList.git",
+  "license": "MIT",
+  "scripts": {
+    "start": "watch 'webpack && clasp push' ./src",
+    "push": "webpack && clasp push",
+    "test": "ts-mocha tests/*.test.ts"
+  },
+  "devDependencies": {
+    "@types/google-apps-script": "^1.0.83",
+    "gas-webpack-plugin": "^2.6.0",
+    "ts-loader": "^9.5.1",
+    "watch": "*",
+    "webpack": "*",
+    "webpack-cli": "*"
+  }
+}
