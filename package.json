@@ -18,5 +18,8 @@
     "ts-loader": "^9.5.1",
     "webpack": "*",
     "webpack-cli": "*"
+  },
+  "resolutions": {
+    "minimatch": "^9.0.5"
   }
 }
